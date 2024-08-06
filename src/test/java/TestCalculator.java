@@ -15,9 +15,20 @@ public class TestCalculator {
     public void testSubtract() {
         assertEquals(1, calculator.subtract(3,2));
     }
+
     @Test
     public void testMultiply() {
         assertEquals(6, calculator.multiply(2,3));
         assertNotEquals(5, calculator.multiply(2,3));
+    }
+
+    @Test
+    public void testStrings() {
+        assertNotEquals("Hello", "hello");
+    }
+
+    @Test
+    public void test() {
+        assertEquals("Java", "ava");
     }
 }
